@@ -79,13 +79,11 @@ public class DBTypes {
       case Types.INTEGER:
         return Schema.of(Schema.Type.INT);
 
-      case Types.BIGINT:
-        return Schema.of(Schema.Type.LONG);
-
       case Types.REAL:
       case Types.FLOAT:
         return Schema.of(Schema.Type.FLOAT);
 
+      case Types.BIGINT:
       case Types.NUMERIC:
       case Types.DECIMAL:
         int precision = metadata.getPrecision(column);
