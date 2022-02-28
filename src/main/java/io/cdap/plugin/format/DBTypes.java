@@ -31,7 +31,6 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.util.List;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Methods for converting database types and values
