@@ -80,7 +80,7 @@ public class DBTypes {
         return Schema.of(Schema.Type.INT);
 
       case Types.BIGINT:
-        if (typeName.contains("UNSIGNED")) {
+        if (typeName.toLowerCase().contains("unsigned")) {
           return getDecimalSafe(metadata, column, typeName);
         } else {
           return Schema.of(Schema.Type.LONG);
